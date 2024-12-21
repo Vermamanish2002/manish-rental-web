@@ -1,0 +1,88 @@
+/* Login Container */
+#signup {
+          width: 100%;
+          height: 70vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        
+        /* Form Styling */
+        #signup form {
+          width: 90%;
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+        }
+        
+        /* Title Styling */
+        #signuptitle {
+          font-size: 40px;
+          font-weight: 500;
+          color: rgb(56, 56, 56);
+          text-align: center;
+        }
+        
+        /* Form Group Styling */
+        #signup .list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 5px;
+        }
+        
+        .list label {
+          font-size: 18px;
+          font-weight: 500;
+          color: rgb(56, 56, 56);
+        }
+        
+        .list input {
+          width: 80%;
+          height: 40px;
+          border: 1px solid rgb(56, 56, 56);
+          border-radius: 5px;
+          padding: 5px 10px;
+          font-size: 16px;
+          color: rgb(56, 56, 56);
+          box-sizing: border-box;
+        }
+        
+        #signup-btn {
+          width: 10%;
+          height: 40px;
+          border: none;
+          border-radius: 5px;
+          background-color: rgb(247, 8, 8);
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          cursor: pointer;
+          border-radius: 30px;
+        
+          &:hover {
+            background-color: #fff;
+            color: rgb(247, 8, 8);
+            transition: 0.2s;
+            border: 1px solid rgb(247, 8, 8);
+          }
+        }
+        
+        /* Input Focus Effect */
+        .list input:focus {
+          border-color: rgb(247, 8, 8);
+          outline: none;
+          box-shadow: 0 0 5px rgba(247, 8, 8, 0.5);
+        }
+        
+
+        @media (max-width: 500px) {
+          #signup-btn {
+            width: 40%;
+          }
+        }
+        
